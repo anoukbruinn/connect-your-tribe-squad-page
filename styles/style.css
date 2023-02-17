@@ -1,0 +1,25 @@
+/*HEADER*/
+
+.logo{
+    position: center;
+}
+
+body {
+background-color: #10214e;
+height: 100vh;
+font-family: open sans;
+display:flex;
+justify-content:center;
+color:#10214e;
+background-repeat: no-repeat;
+margin-top: 50px;
+
+}
+
+h2 {
+    color: white;
+}
+
+.belle {
+    margin-top: 100px;
+}
