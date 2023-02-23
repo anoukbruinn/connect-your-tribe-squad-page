@@ -23,9 +23,9 @@ Ik heb nieuwe technieken gebruikt bij deze opdracht. Ik heb hier gebruik gemaakt
 ## Installatie
 <!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
 
-Om te kunnen werken heb ik verschillende soorten installaties gedaan om te kunnen beginnen. 
+Om te kunnen werken heb ik verschillende soorten installaties gedaan om te kunnen beginnen. Ik ben op de volgende manier begonnen. Clone het project en open de terminal. Type npm install om alle packages te installeren en npm start op de live versie te bekijken.
 ## Gebruik
-
+Mijn idee was om een zo lelijk mogelijke website te maken. Aan de hand van de kleuren van de jurken kon je op deze manier naar de personen toe kan gaan waarvan dat de lievelingskleur is. 
 ## Bronnen
 
 ## Licentie
