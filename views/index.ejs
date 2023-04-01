@@ -1,19 +1,65 @@
 <%- include('./partials/head') %>
 
+<main>
+    <section class="heading">
+        <h1>Squadpage 2022-2023</h1>
+    </section>
+    <section class="filter-bar">
+        <div class="inner-bar">
+            <div class="squad-select">
+                <a href="/?squad=squad-a-2022" class="filterBTN">Squad A</a>
+                <a href="/?squad=squad-b-2022" class="filterBTN">Squad B</a>
+                <a href="/?squad=squat-c-2022" class="filterBTN">Squad C</a>
+            </div>
+            <div class="filter-select">
+                <a href="/?squad=<%= squad.slug %>&orderBy=name" class="filterBTN">Voornaam</a>
+                <a href="/?squad=<%= squad.slug %>&orderBy=surname" class="filterBTN">Achternaam</a>
+                <a href="/?squad=<%= squad.slug %>&orderBy=gitHubHandle" class="filterBTN">GitHub naam</a>
+            </div>
+        </div>
+    </section>
 
-    <h2> Paars </h2>
-    <a href="rapunzel.html"><img src="/assets/" alt="rapunzel" width="379" height="268"></a> 
-
-
-    <h2> Geel </h2>
+    <section class="title-section">
+       <h2> <%= squad.name %> </h2>
+       <button id="submit-btn" class="form-submit-btn" type="button" style="display:none;" onclick="document.getElementById('likeUser').submit()">Opslaan</button>
+    </section>
     
-    <a href="belle.html"></a><img src="/assets/belle-disney-princesses-disney-princess-belle-disney-disney-princess-belle-hd-115629143933ce9x9suhi.png" alt="Belle" width="233 " height="330">
 
+    <%# This is where all the cards will load in %>
+    <section class="profile-grid">
+        <div id="card-container" class="container">
+            <%# Make a loop for al the members %>
+            <% squad.members.forEach(member => { %>
+                <%# This is one card %>
+                <div class="card-item">
+                  <div class="inner-card">
+              
+                    <%# This is the form that acts like a heard button %>
+                    <form action="/" method="post" id="likeUser">
+                      <input type="hidden" name="id" value="<%= member.id %>" />
+                      <input name="like_<%= member.id %>" id="like_<%= member.id %>" type="checkbox" <% if (member.liked) { %>checked<% } %>>
+                      <label for="like_<%= member.id %>">
+                        <p class="like-btn"><i class="fa fa-heart"></i></p>
+                      </label>
+                    </form>
+              
+                    <%# Information about the members %>
+                    <a href="<%= "https://github.com/" + member.gitHubHandle %>" target="_blank"><img class="card-img" src="<%= member.avatar %>" alt="Profiel foto van <%= member.name %>" onerror="this.onerror=null;this.src='/static/img/fallback-pf.png';"></a>
+                    <h3 class="card-name"><%= member.name %> <%= member.prefix %> <%= member.surname %></h3>
+              
+                    <%# When there is no GitHub name there will be a fall back %>
+                    <% if(member.gitHubHandle) { %>
+                      <p class="card-github"><%= member.gitHubHandle %></p>
+                    <% } else { %>
+                      <p>Niet ingevuld</p>
+                    <% } %>
+                    <a href="<%= member.website %>" target="_blank" class="card-button">Website</a>
+                  </div>
+                </div>
+              <% }) %>
+        </div>
+    </section>
+</main>
     
-
-    <h2> Groen </h2>
-    <a href="okemon.html"><img src="/assets/okemon-disney-art-09105-2-disney-princesses-pokemon-crossover-115632429212qk2ephpvl.png" alt="rapunzel" width="212" height="350"></a> 
-
-
 
 <%- include('./partials/foot') %>
