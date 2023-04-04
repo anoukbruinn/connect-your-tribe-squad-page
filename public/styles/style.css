@@ -15,3 +15,28 @@ img.card-img{
     width: 300px;
     height: 300px;
 }
+
+.container {
+    width: 100%;
+    margin-left: 5rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    align-items: center;
+ 
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-align: center; 
+}
+
+a{
+    color: white;
+}

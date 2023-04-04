@@ -1,4 +1,5 @@
 // Import the required modules
+import { render } from "ejs";
 import express from "express";
 import fetch from "node-fetch";
 
@@ -10,6 +11,7 @@ const url = 'https://whois.fdnd.nl/api/v1/squad/'
 // Set EJS as the template engine and specify the views directory
 app.set("view engine", "ejs");
 app.set("views", "./views");
+
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))

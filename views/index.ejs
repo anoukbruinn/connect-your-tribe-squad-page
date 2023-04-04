@@ -37,14 +37,21 @@
                     <%# This is the form that acts like a heard button %>
                     <form action="/" method="post" id="likeUser">
                       <input type="hidden" name="id" value="<%= member.id %>" />
-                      <input name="like_<%= member.id %>" id="like_<%= member.id %>" type="checkbox" <% if (member.liked) { %>checked<% } %>>
+                      
                       <label for="like_<%= member.id %>">
-                        <p class="like-btn"><i class="fa fa-heart"></i></p>
                       </label>
                     </form>
               
                     <%# Information about the members %>
-                    <a href="<%= "https://github.com/" + member.gitHubHandle %>" target="_blank"><img class="card-img" src="<%= member.avatar %>" alt="Profiel foto van <%= member.name %>" onerror="this.onerror=null;this.src='/static/img/fallback-pf.png';"></a>
+                    <a href="<%= "https://github.com/" + member.gitHubHandle %>" target="_blank">
+                      <% if(member.avatar) { %>
+                      <img class="card-img" src="<%= member.avatar %>" alt="Profiel foto van <%= member.name %>" 
+                      alt="De avatar van <%= member.name %>" ">
+                      <% }else{ %>
+                        <img class="card-img" src="/assets/katje.jpeg">
+                      <% } %>
+                    
+                    </a>
                     <h3 class="card-name"><%= member.name %> <%= member.prefix %> <%= member.surname %></h3>
               
                     <%# When there is no GitHub name there will be a fall back %>
@@ -53,6 +60,8 @@
                     <% } else { %>
                       <p>Niet ingevuld</p>
                     <% } %>
+
+
                     <a href="<%= member.website %>" target="_blank" class="card-button">Website</a>
                   </div>
                 </div>
