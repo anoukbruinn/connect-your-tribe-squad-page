@@ -25,7 +25,7 @@ Ik heb nieuwe technieken gebruikt bij deze opdracht. Ik heb hier gebruik gemaakt
 
 Om te kunnen werken heb ik verschillende soorten installaties gedaan om te kunnen beginnen. Ik ben op de volgende manier begonnen. Clone het project en open de terminal. Type npm install om alle packages te installeren en npm start op de live versie te bekijken.
 ## Gebruik
-Mijn idee was om een zo lelijk mogelijke website te maken. Aan de hand van de kleuren van de jurken kon je op deze manier naar de personen toe kan gaan waarvan dat de lievelingskleur is. 
+Mijn idee was om een zo lelijk mogelijke website te maken. ik heb styling toegevoegd aan de achtergrondkleur en de plaatjes zelf. Verder heb ik gezorgd dat als iemand geen foto had geupload of dat hier een error in zat je een placeholder kreeg.
 ## Bronnen
 
 ## Licentie
