@@ -20,12 +20,18 @@
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 Ik heb nieuwe technieken gebruikt bij deze opdracht. Ik heb hier gebruik gemaakt van Node. Node is : 
+
+* node: Is een open-source, platformonafhankelijke JavaScript-runtime en -bibliotheek voor het uitvoeren van webapplicaties buiten de clientbrowser.
+* ejs: is een eenvoudige sjabloontaal waarmee u HTML-opmaak kunt maken met behulp van eenvoudig JavaScript. Geen religiositeit in het organiseren van dingen. Geen herhaling en heruitvinding van control flow. Het is gewoon JavaScript
+* Express: Is een backend-framework voor het bouwen van RESTful API's met behulp van Node.js
+
+
 ## Installatie
 <!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
 
 Om te kunnen werken heb ik verschillende soorten installaties gedaan om te kunnen beginnen. Ik ben op de volgende manier begonnen. Clone het project en open de terminal. Type npm install om alle packages te installeren en npm start op de live versie te bekijken.
 ## Gebruik
-Mijn idee was om een zo lelijk mogelijke website te maken. Aan de hand van de kleuren van de jurken kon je op deze manier naar de personen toe kan gaan waarvan dat de lievelingskleur is. 
+Mijn idee was om een zo lelijk mogelijke website te maken. ik heb styling toegevoegd aan de achtergrondkleur en de plaatjes zelf. Verder heb ik gezorgd dat als iemand geen foto had geupload of dat hier een error in zat je een placeholder kreeg.
 ## Bronnen
 
 ## Licentie
