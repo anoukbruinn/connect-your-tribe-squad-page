@@ -19,7 +19,6 @@ img.card-img{
 .container {
     width: 100%;
     margin-left: 5rem;
-
     display: flex;
     flex-flow: row wrap;
     position: relative;
