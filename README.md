@@ -15,6 +15,9 @@
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
+<img width="900" alt="Scherm­afbeelding 2023-04-07 om 13 44 41" src="https://user-images.githubusercontent.com/112856687/230603623-f926b625-fa7e-4b52-85b2-65ef5c6881e2.png">
+
+
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
