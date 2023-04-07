@@ -44,10 +44,10 @@
               
                     <%# Information about the members %>
                     <a href="<%= "https://github.com/" + member.gitHubHandle %>" target="_blank">
-                      <% if(member.avatar) { %>
+                      <% if(member.avatar) { %> <!-- ALs ... -->
                       <img class="card-img" src="<%= member.avatar %>" alt="Profiel foto van <%= member.name %>" 
                       alt="De avatar van <%= member.name %>" ">
-                      <% }else{ %>
+                      <% }else{ %> <!-- Dan ... -->
                         <img class="card-img" src="/assets/katje.jpeg">
                       <% } %>
                     
